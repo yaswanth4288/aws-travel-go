@@ -416,7 +416,7 @@ def confirm_flight_booking():
     flash('Flight booking confirmed successfully!', 'success')
     return redirect(url_for('dashboard'))
 
-@app.route('/hotel.html')
+@app.route('/hotel')
 def hotel():
     if 'email' not in session:
         return redirect(url_for('login'))
