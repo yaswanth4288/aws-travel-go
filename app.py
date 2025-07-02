@@ -15,11 +15,11 @@ REGION = 'us-east-1'  # Replace with your actual AWS region
 dynamodb = boto3.resource('dynamodb', region_name=REGION)
 sns_client = boto3.client('sns', region_name=REGION)
 
-users_table = dynamodb.Table('travelgo_users')
+users_table = dynamodb.Table('travel_users')
 trains_table = dynamodb.Table('trains') # Note: This table is declared but not used in the provided routes.
 bookings_table = dynamodb.Table('bookings')
 
-SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:682033465674:Travelgo'  # Replace with actual SNS topic ARN
+SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:586794467071:Travelgo:031efa57-e0b3-4797-9574-0b56146c0532'  # Replace with actual SNS topic ARN
 
 # Function to send SNS notifications
 # This function is duplicated in the original code, removing the duplicate.
